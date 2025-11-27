@@ -1,26 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'class',
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Inter var', 'sans-serif'],
-      },
-      animation: {
-        'gradient': 'gradient 8s linear infinite',
-      },
-      keyframes: {
-        gradient: {
-          '0%, 100%': {
-            'background-size': '200% 200%',
-            'background-position': 'left center',
-          },
-          '50%': {
-            'background-size': '200% 200%',
-            'background-position': 'right center',
-          },
-        },
+      colors: {
+        'royal-navy': 'var(--royal-navy)',
+        gold: 'var(--gold)',
+        aqua: 'var(--aqua)',
+        'brand-red': 'var(--brand-red)',
+        coral: 'var(--coral)',
+        charcoal: 'var(--charcoal)',
+        'warm-white': 'var(--warm-white)',
+        'soft-grey': 'var(--soft-grey)',
       },
     },
   },

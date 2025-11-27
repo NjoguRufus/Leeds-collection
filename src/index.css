@@ -1,3 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --royal-navy: #0A1A3A;
+    --gold: #F4B21A;
+    --aqua: #39C1E2;
+    --brand-red: #E32227;
+    --coral: #D75452;
+    --black: #000000;
+    --charcoal: #1A1A1A;
+    --warm-white: #F9F6F2;
+    --soft-grey: #EDECEC;
+  }
+
+  body {
+    @apply font-sans antialiased bg-warm-white text-charcoal;
+  }
+
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-sans {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
